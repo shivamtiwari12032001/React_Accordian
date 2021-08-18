@@ -4,7 +4,7 @@ import "./Accordian.css";
 const Accordian = (props) => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="single_accordian">
+    <div className={`single_accordian ${toggle ? "expanded" : ""}`}>
       <div className="title">
         <h1 className="heading">
           {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit */}

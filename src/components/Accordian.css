@@ -11,6 +11,19 @@
   padding-right: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  overflow: hidden;
+
+  /* max-height: 0em;
+ transition: all 2s ease-out; 
+  /* height: auto; */
+
+  max-height: 3em;
+  transition: max-height 1s ease-out;
+}
+
+.expanded {
+  max-height: 18em;
+  transition: max-height 1s ease-out;
 }
 
 .title {
@@ -19,11 +32,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  /* transition: all 3s ease; */
   /* border: 2px solid red; */
 }
 
 .heading {
   font-size: 1.5em;
+  transition: all 3s ease;
 }
 .para {
   font-size: 1em;
@@ -38,6 +53,7 @@
   border: none;
   color: white;
   border-radius: 50%;
+  transition: all 3s ease;
 }
 @media screen and (max-width: 800px) {
   .single_accordian {
