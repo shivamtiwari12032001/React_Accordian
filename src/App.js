@@ -4,7 +4,7 @@ import Accordian from "./components/Accordian";
 function App() {
   return (
     <div className="App">
-      <h1>React Accordian</h1>
+      <h1 className="main_heading">React Accordian</h1>
       <Accordian heading={"React usestate"} />
       <Accordian heading={"React useEffect"} />
       <Accordian heading={"React useContext"} />
